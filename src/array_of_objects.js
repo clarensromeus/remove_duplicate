@@ -4,7 +4,7 @@ const remove_duplicate_from_array_of_object = (books) => {
 
 // first way of remove duplications from an array of objects
     let unique = books.filter((v, i, a) => a.findIndex(t => (t.name === v.name)) === i)
-    console.log("first way of removing duplicate from an array of elements",unique)
+    console.log("first way of removing duplicate from an array of objects",unique)
 
 // second way of removing duplicate elements from an array of objects
   const fourth_way = books.reduce((acc, current) => {
